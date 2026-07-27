@@ -28,7 +28,83 @@
 
         <section>
           <h2>Order</h2>
-          <p>The pre-order form will be coming soon!</p>
+          <form>
+            <fieldset>
+              <legend>Who is Picking Up?</legend>
+              <div class="form-group">
+                <label for="name">Name:</label>
+                <input class="field" type="text" id="name" name="name" required>
+              </div>
+              <div class="form-group">
+                <label for="email">Email:</label>
+                <input class="field" type="email" id="email" name="email" required>
+              </div>
+            </fieldset>
+            <fieldset>
+              <legend>Pickup Day</legend>
+              <div class="form-group">
+                <label for="pickup-day">Select a day:</label>
+                <div class="choice-row">
+                  <label class="choice" for="monday"><input type="radio" id="monday" name="pickup-day" value="Monday" required> Monday</label>
+                  <label class="choice" for="tuesday"><input type="radio" id="tuesday" name="pickup-day" value="Tuesday" required> Tuesday</label>
+                  <label class="choice" for="wednesday"><input type="radio" id="wednesday" name="pickup-day" value="Wednesday" required> Wednesday</label>
+                  <label class="choice" for="thursday"><input type="radio" id="thursday" name="pickup-day" value="Thursday" required> Thursday</label>
+                  <label class="choice" for="friday"><input type="radio" id="friday" name="pickup-day" value="Friday" required> Friday</label>
+                  <label class="choice" for="saturday"><input type="radio" id="saturday" name="pickup-day" value="Saturday" required checked> Saturday</label>
+                  <label class="choice" for="sunday"><input type="radio" id="sunday" name="pickup-day" value="Sunday" required> Sunday</label>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="pickup-time">Select a time:</label>
+                <select class="field" id="pickup-time" name="pickup-time" required>
+                  <option value="8:00 AM">8:00 AM</option>
+                  <option value="9:00 AM">9:00 AM</option>
+                  <option value="10:00 AM">10:00 AM</option>
+                  <option value="11:00 AM">11:00 AM</option>
+                  <option value="12:00 PM">12:00 PM</option>
+                  <option value="1:00 PM">1:00 PM</option>
+                  <option value="2:00 PM">2:00 PM</option>
+                  <option value="3:00 PM">3:00 PM</option>
+                  <option value="4:00 PM">4:00 PM</option>
+                  <option value="5:00 PM">5:00 PM</option>
+                  <option value="6:00 PM">6:00 PM</option>
+                  <option value="7:00 PM">7:00 PM</option>
+                  <option value="8:00 PM">8:00 PM</option>
+                  <option value="9:00 PM">9:00 PM</option>
+                </select>
+              </div>
+            </fieldset>
+
+            <fieldset>
+              <legend>Your Order</legend>
+              <h4>Starters</h4>
+              <div class="choice-row">
+                <label class="choice" for="french-onion-soup"><input type="checkbox" id="french-onion-soup" name="order-item" value="French Onion Soup"> French Onion Soup ($8)</label>
+                <label class="choice" for="caesar-salad"><input type="checkbox" id="caesar-salad" name="order-item" value="Caesar Salad"> Caesar Salad ($9)</label>
+              </div>
+
+              <h4>Main Courses</h4>
+              <div class="choice-row">
+                <label class="choice" for="grilled-salmon"><input type="checkbox" id="grilled-salmon" name="order-item" value="Grilled Salmon with Lemon Butter Sauce"> Grilled Salmon with Lemon Butter Sauce ($22)</label>
+                <label class="choice" for="roasted-chicken"><input type="checkbox" id="roasted-chicken" name="order-item" value="Roasted Chicken with Herbs"> Roasted Chicken with Herbs ($20)</label>
+              </div>
+
+              <h4>Desserts</h4>
+              <div class="choice-row">
+                <label class="choice" for="chocolate-lava-cake"><input type="checkbox" id="chocolate-lava-cake" name="order-item" value="Chocolate Lava Cake"> Chocolate Lava Cake ($10)</label>
+                <label class="choice" for="creme-brulee"><input type="checkbox" id="creme-brulee" name="order-item" value="Vanilla Crème Brûlée"> Vanilla Crème Brûlée ($11)</label>
+              </div>
+            
+              <div class="form-group">
+                <label for="notes">Notes</label>
+                <textarea class="field" id="notes" name="notes"></textarea>
+              </div>
+            </fieldset>
+
+            <button type="submit">Submit Order</button>
+
+          </form>
         </section>
       </div>
     </main>
