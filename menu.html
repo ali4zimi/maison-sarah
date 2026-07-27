@@ -11,41 +11,74 @@
   </head>
   <body>
     <header>
-      <h1 class="brand">Maison Sarah</h1>
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="menu.html">Menu</a></li>
-          <li><a href="order.html">Order</a></li>
-        </ul>
-      </nav>
+      <div class="container header-bar">
+        <h1 class="brand">Maison Sarah</h1>
+        <nav>
+          <a href="index.html">Home</a>
+          <a href="menu.html">Menu</a>
+          <a href="order.html">Order</a>
+        </nav>
+      </div>
     </header>
     <main>
-      <section>
-        <h2>Our Menu</h2>
-        <p class="tagline">Delightful Gourmet Dishes Crafted with Love and Passion</p>
+      <div class="container">
+        <section class="hero">
+          <img src="images/restaurant.jpg" alt="Maison Sarah Restaurant" class="hero-image">
+        </section>
+        
+        <section>
+          <h2>Weekend Specials</h2>
+          <div class="card-row">
+            <article class="card">
+              <img src="images/omelet.jpg" alt="Omelet" class="card-image">
+              <h3>Omelet</h3>
+              <p>A fluffy omelet filled with fresh vegetables and cheese.</p>
+              <p class="price">$12</p>
+            </article>
+            <article class="card">
+              <img src="images/coffee.jpg" alt="Coffee" class="card-image">
+              <h3>Coffee</h3>
+              <p>A rich and aromatic coffee to start your day.</p>
+              <p class="price">$3</p>
+            </article>
+            <article class="card">
+              <img src="images/sandwich.jpg" alt="Sandwich" class="card-image">
+              <h3>Sandwich</h3>
+              <p>A delicious sandwich with fresh ingredients.</p>
+              <p class="price">$10</p>
+            </article>
+          </div>
+        </section>
+        
+        <section>
+          <h2>Our Menu</h2>
+          <p class="tagline">Delightful Gourmet Dishes Crafted with Love and Passion</p>
 
-        <h3>Starters</h3>
-        <ul>
-          <li>French Onion Soup <span class="price">$8</span></li>
-          <li>Caesar Salad <span class="price">$9</span></li>
-        </ul>
+          <h3>Starters</h3>
+          <ul>
+            <li>French Onion Soup <span class="price">$8</span></li>
+            <li>Caesar Salad <span class="price">$9</span></li>
+          </ul>
 
-        <h3>Main Courses</h3>
-        <ul>
-          <li>Grilled Salmon with Lemon Butter Sauce <span class="price">$22</span></li>
-          <li>Roasted Chicken with Herbs <span class="price">$20</span></li>
-        </ul>
+          <h3>Main Courses</h3>
+          <ul>
+            <li>Grilled Salmon with Lemon Butter Sauce <span class="price">$22</span></li>
+            <li>Roasted Chicken with Herbs <span class="price">$20</span></li>
+          </ul>
 
-        <h3>Desserts</h3>
-        <ul>
-          <li>Chocolate Lava Cake <span class="price">$10</span></li>
-          <li>Vanilla Crème Brûlée <span class="price">$11</span></li>
-        </ul>
-      </section>
+          <h3>Desserts</h3>
+          <ul>
+            <li>Chocolate Lava Cake <span class="price">$10</span></li>
+            <li>Vanilla Crème Brûlée <span class="price">$11</span></li>
+          </ul>
+        </section>
+
+      </div>
     </main>
     <footer>
-      <p>&copy; 2026 Maison Sarah. All rights reserved.</p>
+      <div class="container">
+        <p>&copy; 2026 Maison Sarah. All rights reserved.</p>
+      </div>
     </footer>
   </body>
 </html>
